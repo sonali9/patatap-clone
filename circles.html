@@ -94,7 +94,7 @@
 		var maxPoint= new Point(view.size.width,view.size.height);
 		var randomPoint=Point.random();
 		var points=randomPoint*maxPoint;
-			
+			var b=0;
 		if(event.key==="a"){
 			sound1.play();
 			var myCircle= new Path.Circle(new Point(points),300);
@@ -217,6 +217,7 @@
 			circles.push(myCircle);
 		}else if(event.key==="y"){
 			sound25.play();
+			var a=0;
 			var myCircle= new Path.Circle(new Point(points),300);
 			myCircle.fillColor='magenta';
 			circles.push(myCircle);
@@ -237,6 +238,7 @@
           lines[i].fillColor.hue+=4;
           lines[i].rotate(10);
           lines[i].scale(0.9);
+          var a=0;
           if(lines.length>100)
             lines.splice(0,1);
         }
@@ -245,6 +247,6 @@
 </script>
 </head>
 <body>
-<canvas id="myCanvas" resize></canvas>
+<canvas id="myCanvas abc" resize></canvas>
 </body>
 </html>
